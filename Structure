@@ -1,0 +1,65 @@
+ERP-Student-Management-System/
+│
+├── README.md
+├── .gitignore
+├── pom.xml (if using Maven)
+│
+├── docs/
+│   ├── architecture-diagram.png
+│   ├── problem-statement.md
+│   └── screenshots/
+│
+├── database/
+│   └── schema.sql
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/erp/
+│       │       ├── controller/
+│       │       │   ├── AddStudentServlet.java
+│       │       │   ├── FeeServlet.java
+│       │       │   ├── HostelServlet.java
+│       │       │   └── LoginServlet.java
+│       │       │
+│       │       ├── dao/
+│       │       │   ├── StudentDAO.java
+│       │       │   ├── FeeDAO.java
+│       │       │   └── DBConnection.java
+│       │       │
+│       │       ├── model/
+│       │       │   ├── Student.java
+│       │       │   ├── Fee.java
+│       │       │   └── Hostel.java
+│       │       │
+│       │       └── util/
+│       │           └── EmailUtil.java
+│       │
+│       ├── webapp/
+│       │   ├── index.jsp
+│       │   ├── login.jsp
+│       │   ├── dashboard.jsp
+│       │   │
+│       │   ├── student/
+│       │   │   ├── add-student.jsp
+│       │   │   └── view-students.jsp
+│       │   │
+│       │   ├── fees/
+│       │   │   ├── pay-fee.jsp
+│       │   │   └── receipt.jsp
+│       │   │
+│       │   ├── hostel/
+│       │   │   ├── allocate.jsp
+│       │   │   └── rooms.jsp
+│       │   │
+│       │   ├── css/
+│       │   ├── js/
+│       │   └── images/
+│       │
+│       └── web.xml
+│
+├── scripts/
+│   └── automation.gs   (Google Apps Script)
+│
+└── test/
+    └── (unit tests optional)
